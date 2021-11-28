@@ -1,0 +1,1836 @@
+{
+  "fields": [
+    {
+      "id": 1,
+      "label": "First name",
+      "name": "first_name",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": 1,
+      "visible": true
+    },
+    {
+      "id": 2,
+      "label": "Last name",
+      "name": "last_name",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 2,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": 2,
+      "visible": true
+    },
+    {
+      "id": 3,
+      "label": "Accounts",
+      "name": "sales_accounts",
+      "type": "group_field",
+      "default": true,
+      "actionable": true,
+      "position": 3,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": 3,
+      "visible": true
+    },
+    {
+      "id": 4,
+      "label": "Emails",
+      "name": "emails",
+      "type": "group_field",
+      "default": true,
+      "actionable": true,
+      "position": 4,
+      "choices": [
+        {
+          "id": "18005922766",
+          "value": "Work",
+          "position": 1
+        },
+        {
+          "id": "18005922767",
+          "value": "Personal",
+          "position": 2
+        },
+        {
+          "id": "18005922768",
+          "value": "Other",
+          "position": 3
+        }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": 4,
+      "visible": true
+    },
+    {
+      "id": 5,
+      "label": "Mobile",
+      "name": "mobile_number",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": 6,
+      "visible": true
+    },
+    {
+      "id": 6,
+      "label": "Work",
+      "name": "work_number",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 2,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": 7,
+      "visible": true
+    },
+    {
+      "id": 7,
+      "label": "External ID",
+      "name": "external_id",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 6,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": 8,
+      "visible": false
+    },
+    {
+      "id": 8,
+      "label": "Sales owner",
+      "name": "owner_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 7,
+      "choices": [
+        {
+          "id": 17000047125,
+          "value": "zzz ggg",
+          "position": 1,
+          "is_active": true,
+          "deal_pipeline_id": 17000040685
+        }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": 9,
+      "visible": true
+    },
+    {
+      "id": 9,
+      "label": "Subscription status",
+      "name": "subscription_status",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 8,
+      "choices": [
+        {
+          "id": "0",
+          "value": "Unsubscribed",
+          "position": 1
+        },
+        {
+          "id": "1",
+          "value": "Subscribed",
+          "position": 2
+        },
+        {
+          "id": "2",
+          "value": "Not subscribed",
+          "position": 3
+        },
+        {
+          "id": "3",
+          "value": "Reported as spam",
+          "position": 4
+        },
+        {
+          "id": "4",
+          "value": "Bounced",
+          "position": 5
+        }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": 10,
+      "visible": true
+    },
+    {
+      "id": 10,
+      "label": "Subscription types",
+      "name": "subscription_types",
+      "type": "multi_select_dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [
+        {
+          "id": "2",
+          "value": "Newsletter",
+          "position": 1
+        },
+        {
+          "id": "3",
+          "value": "Promotional",
+          "position": 2
+        },
+        {
+          "id": "4",
+          "value": "Product updates",
+          "position": 3
+        },
+        {
+          "id": "5",
+          "value": "Conferences & Events",
+          "position": 4
+        },
+        {
+          "id": "1",
+          "value": "Non-marketing emails from our company",
+          "position": 5
+        }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 11,
+      "label": "WhatsApp subscription status",
+      "name": "whatsapp_subscription_status",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 9,
+      "choices": [
+        {
+          "id": "0",
+          "value": "Unsubscribed",
+          "position": 1
+        },
+        {
+          "id": "1",
+          "value": "Subscribed",
+          "position": 2
+        },
+        {
+          "id": "2",
+          "value": "Not subscribed",
+          "position": 3
+        }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": 12,
+      "visible": true
+    },
+    {
+      "id": 12,
+      "label": "Lifecycle stage",
+      "name": "lifecycle_stage_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 10,
+      "choices": [
+        {
+          "id": "18005922769",
+          "value": "Lead",
+          "position": 1
+        },
+        {
+          "id": "18005922770",
+          "value": "Sales Qualified Lead",
+          "position": 2
+        },
+        {
+          "id": "18005922771",
+          "value": "Customer",
+          "position": 3
+        }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": 13,
+      "visible": true
+    },
+    {
+      "id": 13,
+      "label": "Status",
+      "name": "contact_status_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [
+        {
+          "id": 17000359563,
+          "value": "New",
+          "position": 1,
+          "forecast_type": "Open"
+        },
+        {
+          "id": 17000359564,
+          "value": "Contacted",
+          "position": 2,
+          "forecast_type": "Open"
+        },
+        {
+          "id": 17000359565,
+          "value": "Interested",
+          "position": 3,
+          "forecast_type": "Open"
+        },
+        {
+          "id": 17000359566,
+          "value": "Unqualified",
+          "position": 4,
+          "forecast_type": "Closed Lost"
+        },
+        {
+          "id": 17000359567,
+          "value": "Qualified",
+          "position": 5,
+          "forecast_type": "Open"
+        },
+        {
+          "id": 17000359568,
+          "value": "Negotiation",
+          "position": 6,
+          "forecast_type": "Open"
+        },
+        {
+          "id": 17000359569,
+          "value": "Lost",
+          "position": 7,
+          "forecast_type": "Closed Lost"
+        },
+        {
+          "id": 17000359570,
+          "value": "Won",
+          "position": 8,
+          "forecast_type": "Closed Won"
+        },
+        {
+          "id": 17000359571,
+          "value": "Churned",
+          "position": 9,
+          "forecast_type": "Closed Lost"
+        }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 14,
+      "label": "Lost reason",
+      "name": "lost_reason_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [
+        {
+          "id": "18005922772",
+          "value": "Junk Lead",
+          "position": 1
+        },
+        {
+          "id": "18005922773",
+          "value": "Not able to reach",
+          "position": 2
+        },
+        {
+          "id": "18005922774",
+          "value": "Not interested",
+          "position": 3
+        },
+        {
+          "id": "18005922775",
+          "value": "Budget",
+          "position": 4
+        },
+        {
+          "id": "18005922776",
+          "value": "Lost to competitor",
+          "position": 5
+        }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": true
+    },
+    {
+      "id": 15,
+      "label": "Work email",
+      "name": "work_email",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 16,
+      "label": "Tags",
+      "name": "tags",
+      "type": "auto_complete",
+      "default": true,
+      "actionable": true,
+      "position": 2,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false,
+      "auto_suggest_url": "/search/auto_suggest/tags.json?&tag_type=contact&q=",
+      "creatable": true,
+      "creatable_data_key": "tags",
+      "multiple": true
+    },
+    {
+      "id": 17,
+      "label": "Job title",
+      "name": "job_title",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 3,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 18,
+      "label": "Time zone",
+      "name": "time_zone",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 5,
+      "choices": [
+        {
+          "id": "American Samoa",
+          "value": "(GMT-11:00) American Samoa",
+          "position": 1
+        },
+        {
+          "id": "International Date Line West",
+          "value": "(GMT-11:00) International Date Line West",
+          "position": 2
+        },
+        {
+          "id": "Midway Island",
+          "value": "(GMT-11:00) Midway Island",
+          "position": 3
+        },
+        {
+          "id": "Hawaii",
+          "value": "(GMT-10:00) Hawaii",
+          "position": 4
+        },
+        {
+          "id": "Alaska",
+          "value": "(GMT-09:00) Alaska",
+          "position": 5
+        },
+        {
+          "id": "Pacific Time (US & Canada)",
+          "value": "(GMT-08:00) Pacific Time (US & Canada)",
+          "position": 6
+        },
+        {
+          "id": "Tijuana",
+          "value": "(GMT-08:00) Tijuana",
+          "position": 7
+        },
+        {
+          "id": "Arizona",
+          "value": "(GMT-07:00) Arizona",
+          "position": 8
+        },
+        {
+          "id": "Chihuahua",
+          "value": "(GMT-07:00) Chihuahua",
+          "position": 9
+        },
+        {
+          "id": "Mazatlan",
+          "value": "(GMT-07:00) Mazatlan",
+          "position": 10
+        },
+        {
+          "id": "Mountain Time (US & Canada)",
+          "value": "(GMT-07:00) Mountain Time (US & Canada)",
+          "position": 11
+        },
+        {
+          "id": "Central America",
+          "value": "(GMT-06:00) Central America",
+          "position": 12
+        },
+        {
+          "id": "Central Time (US & Canada)",
+          "value": "(GMT-06:00) Central Time (US & Canada)",
+          "position": 13
+        },
+        {
+          "id": "Guadalajara",
+          "value": "(GMT-06:00) Guadalajara",
+          "position": 14
+        },
+        {
+          "id": "Mexico City",
+          "value": "(GMT-06:00) Mexico City",
+          "position": 15
+        },
+        {
+          "id": "Monterrey",
+          "value": "(GMT-06:00) Monterrey",
+          "position": 16
+        },
+        {
+          "id": "Saskatchewan",
+          "value": "(GMT-06:00) Saskatchewan",
+          "position": 17
+        },
+        {
+          "id": "Bogota",
+          "value": "(GMT-05:00) Bogota",
+          "position": 18
+        },
+        {
+          "id": "Eastern Time (US & Canada)",
+          "value": "(GMT-05:00) Eastern Time (US & Canada)",
+          "position": 19
+        },
+        {
+          "id": "Indiana (East)",
+          "value": "(GMT-05:00) Indiana (East)",
+          "position": 20
+        },
+        {
+          "id": "Lima",
+          "value": "(GMT-05:00) Lima",
+          "position": 21
+        },
+        {
+          "id": "Quito",
+          "value": "(GMT-05:00) Quito",
+          "position": 22
+        },
+        {
+          "id": "Atlantic Time (Canada)",
+          "value": "(GMT-04:00) Atlantic Time (Canada)",
+          "position": 23
+        },
+        {
+          "id": "Caracas",
+          "value": "(GMT-04:00) Caracas",
+          "position": 24
+        },
+        {
+          "id": "Georgetown",
+          "value": "(GMT-04:00) Georgetown",
+          "position": 25
+        },
+        {
+          "id": "La Paz",
+          "value": "(GMT-04:00) La Paz",
+          "position": 26
+        },
+        {
+          "id": "Santiago",
+          "value": "(GMT-03:00) Santiago",
+          "position": 27
+        },
+        {
+          "id": "Newfoundland",
+          "value": "(GMT-03:30) Newfoundland",
+          "position": 28
+        },
+        {
+          "id": "Brasilia",
+          "value": "(GMT-03:00) Brasilia",
+          "position": 29
+        },
+        {
+          "id": "Buenos Aires",
+          "value": "(GMT-03:00) Buenos Aires",
+          "position": 30
+        },
+        {
+          "id": "Greenland",
+          "value": "(GMT-03:00) Greenland",
+          "position": 31
+        },
+        {
+          "id": "Mid-Atlantic",
+          "value": "(GMT-02:00) Mid-Atlantic",
+          "position": 32
+        },
+        {
+          "id": "Azores",
+          "value": "(GMT-01:00) Azores",
+          "position": 33
+        },
+        {
+          "id": "Cape Verde Is.",
+          "value": "(GMT-01:00) Cape Verde Is.",
+          "position": 34
+        },
+        {
+          "id": "Edinburgh",
+          "value": "(GMT+00:00) Edinburgh",
+          "position": 35
+        },
+        {
+          "id": "Lisbon",
+          "value": "(GMT+00:00) Lisbon",
+          "position": 36
+        },
+        {
+          "id": "London",
+          "value": "(GMT+00:00) London",
+          "position": 37
+        },
+        {
+          "id": "Monrovia",
+          "value": "(GMT+00:00) Monrovia",
+          "position": 38
+        },
+        {
+          "id": "UTC",
+          "value": "(GMT+00:00) UTC",
+          "position": 39
+        },
+        {
+          "id": "Amsterdam",
+          "value": "(GMT+01:00) Amsterdam",
+          "position": 40
+        },
+        {
+          "id": "Belgrade",
+          "value": "(GMT+01:00) Belgrade",
+          "position": 41
+        },
+        {
+          "id": "Berlin",
+          "value": "(GMT+01:00) Berlin",
+          "position": 42
+        },
+        {
+          "id": "Bern",
+          "value": "(GMT+01:00) Bern",
+          "position": 43
+        },
+        {
+          "id": "Bratislava",
+          "value": "(GMT+01:00) Bratislava",
+          "position": 44
+        },
+        {
+          "id": "Brussels",
+          "value": "(GMT+01:00) Brussels",
+          "position": 45
+        },
+        {
+          "id": "Budapest",
+          "value": "(GMT+01:00) Budapest",
+          "position": 46
+        },
+        {
+          "id": "Casablanca",
+          "value": "(GMT+01:00) Casablanca",
+          "position": 47
+        },
+        {
+          "id": "Copenhagen",
+          "value": "(GMT+01:00) Copenhagen",
+          "position": 48
+        },
+        {
+          "id": "Dublin",
+          "value": "(GMT+00:00) Dublin",
+          "position": 49
+        },
+        {
+          "id": "Ljubljana",
+          "value": "(GMT+01:00) Ljubljana",
+          "position": 50
+        },
+        {
+          "id": "Madrid",
+          "value": "(GMT+01:00) Madrid",
+          "position": 51
+        },
+        {
+          "id": "Paris",
+          "value": "(GMT+01:00) Paris",
+          "position": 52
+        },
+        {
+          "id": "Prague",
+          "value": "(GMT+01:00) Prague",
+          "position": 53
+        },
+        {
+          "id": "Rome",
+          "value": "(GMT+01:00) Rome",
+          "position": 54
+        },
+        {
+          "id": "Sarajevo",
+          "value": "(GMT+01:00) Sarajevo",
+          "position": 55
+        },
+        {
+          "id": "Skopje",
+          "value": "(GMT+01:00) Skopje",
+          "position": 56
+        },
+        {
+          "id": "Stockholm",
+          "value": "(GMT+01:00) Stockholm",
+          "position": 57
+        },
+        {
+          "id": "Vienna",
+          "value": "(GMT+01:00) Vienna",
+          "position": 58
+        },
+        {
+          "id": "Warsaw",
+          "value": "(GMT+01:00) Warsaw",
+          "position": 59
+        },
+        {
+          "id": "West Central Africa",
+          "value": "(GMT+01:00) West Central Africa",
+          "position": 60
+        },
+        {
+          "id": "Zagreb",
+          "value": "(GMT+01:00) Zagreb",
+          "position": 61
+        },
+        {
+          "id": "Athens",
+          "value": "(GMT+02:00) Athens",
+          "position": 62
+        },
+        {
+          "id": "Bucharest",
+          "value": "(GMT+02:00) Bucharest",
+          "position": 63
+        },
+        {
+          "id": "Cairo",
+          "value": "(GMT+02:00) Cairo",
+          "position": 64
+        },
+        {
+          "id": "Harare",
+          "value": "(GMT+02:00) Harare",
+          "position": 65
+        },
+        {
+          "id": "Helsinki",
+          "value": "(GMT+02:00) Helsinki",
+          "position": 66
+        },
+        {
+          "id": "Jerusalem",
+          "value": "(GMT+02:00) Jerusalem",
+          "position": 67
+        },
+        {
+          "id": "Kyiv",
+          "value": "(GMT+02:00) Kyiv",
+          "position": 68
+        },
+        {
+          "id": "Pretoria",
+          "value": "(GMT+02:00) Pretoria",
+          "position": 69
+        },
+        {
+          "id": "Riga",
+          "value": "(GMT+02:00) Riga",
+          "position": 70
+        },
+        {
+          "id": "Sofia",
+          "value": "(GMT+02:00) Sofia",
+          "position": 71
+        },
+        {
+          "id": "Tallinn",
+          "value": "(GMT+02:00) Tallinn",
+          "position": 72
+        },
+        {
+          "id": "Vilnius",
+          "value": "(GMT+02:00) Vilnius",
+          "position": 73
+        },
+        {
+          "id": "Baghdad",
+          "value": "(GMT+03:00) Baghdad",
+          "position": 74
+        },
+        {
+          "id": "Istanbul",
+          "value": "(GMT+03:00) Istanbul",
+          "position": 75
+        },
+        {
+          "id": "Kuwait",
+          "value": "(GMT+03:00) Kuwait",
+          "position": 76
+        },
+        {
+          "id": "Minsk",
+          "value": "(GMT+03:00) Minsk",
+          "position": 77
+        },
+        {
+          "id": "Moscow",
+          "value": "(GMT+03:00) Moscow",
+          "position": 78
+        },
+        {
+          "id": "Nairobi",
+          "value": "(GMT+03:00) Nairobi",
+          "position": 79
+        },
+        {
+          "id": "Riyadh",
+          "value": "(GMT+03:00) Riyadh",
+          "position": 80
+        },
+        {
+          "id": "St. Petersburg",
+          "value": "(GMT+03:00) St. Petersburg",
+          "position": 81
+        },
+        {
+          "id": "Volgograd",
+          "value": "(GMT+03:00) Volgograd",
+          "position": 82
+        },
+        {
+          "id": "Tehran",
+          "value": "(GMT+03:30) Tehran",
+          "position": 83
+        },
+        {
+          "id": "Abu Dhabi",
+          "value": "(GMT+04:00) Abu Dhabi",
+          "position": 84
+        },
+        {
+          "id": "Baku",
+          "value": "(GMT+04:00) Baku",
+          "position": 85
+        },
+        {
+          "id": "Muscat",
+          "value": "(GMT+04:00) Muscat",
+          "position": 86
+        },
+        {
+          "id": "Tbilisi",
+          "value": "(GMT+04:00) Tbilisi",
+          "position": 87
+        },
+        {
+          "id": "Yerevan",
+          "value": "(GMT+04:00) Yerevan",
+          "position": 88
+        },
+        {
+          "id": "Kabul",
+          "value": "(GMT+04:30) Kabul",
+          "position": 89
+        },
+        {
+          "id": "Ekaterinburg",
+          "value": "(GMT+05:00) Ekaterinburg",
+          "position": 90
+        },
+        {
+          "id": "Islamabad",
+          "value": "(GMT+05:00) Islamabad",
+          "position": 91
+        },
+        {
+          "id": "Karachi",
+          "value": "(GMT+05:00) Karachi",
+          "position": 92
+        },
+        {
+          "id": "Tashkent",
+          "value": "(GMT+05:00) Tashkent",
+          "position": 93
+        },
+        {
+          "id": "Chennai",
+          "value": "(GMT+05:30) Chennai",
+          "position": 94
+        },
+        {
+          "id": "Kolkata",
+          "value": "(GMT+05:30) Kolkata",
+          "position": 95
+        },
+        {
+          "id": "Mumbai",
+          "value": "(GMT+05:30) Mumbai",
+          "position": 96
+        },
+        {
+          "id": "New Delhi",
+          "value": "(GMT+05:30) New Delhi",
+          "position": 97
+        },
+        {
+          "id": "Sri Jayawardenepura",
+          "value": "(GMT+05:30) Sri Jayawardenepura",
+          "position": 98
+        },
+        {
+          "id": "Kathmandu",
+          "value": "(GMT+05:45) Kathmandu",
+          "position": 99
+        },
+        {
+          "id": "Almaty",
+          "value": "(GMT+06:00) Almaty",
+          "position": 100
+        },
+        {
+          "id": "Astana",
+          "value": "(GMT+06:00) Astana",
+          "position": 101
+        },
+        {
+          "id": "Dhaka",
+          "value": "(GMT+06:00) Dhaka",
+          "position": 102
+        },
+        {
+          "id": "Urumqi",
+          "value": "(GMT+06:00) Urumqi",
+          "position": 103
+        },
+        {
+          "id": "Rangoon",
+          "value": "(GMT+06:30) Rangoon",
+          "position": 104
+        },
+        {
+          "id": "Bangkok",
+          "value": "(GMT+07:00) Bangkok",
+          "position": 105
+        },
+        {
+          "id": "Hanoi",
+          "value": "(GMT+07:00) Hanoi",
+          "position": 106
+        },
+        {
+          "id": "Jakarta",
+          "value": "(GMT+07:00) Jakarta",
+          "position": 107
+        },
+        {
+          "id": "Krasnoyarsk",
+          "value": "(GMT+07:00) Krasnoyarsk",
+          "position": 108
+        },
+        {
+          "id": "Novosibirsk",
+          "value": "(GMT+07:00) Novosibirsk",
+          "position": 109
+        },
+        {
+          "id": "Beijing",
+          "value": "(GMT+08:00) Beijing",
+          "position": 110
+        },
+        {
+          "id": "Chongqing",
+          "value": "(GMT+08:00) Chongqing",
+          "position": 111
+        },
+        {
+          "id": "Hong Kong",
+          "value": "(GMT+08:00) Hong Kong",
+          "position": 112
+        },
+        {
+          "id": "Irkutsk",
+          "value": "(GMT+08:00) Irkutsk",
+          "position": 113
+        },
+        {
+          "id": "Kuala Lumpur",
+          "value": "(GMT+08:00) Kuala Lumpur",
+          "position": 114
+        },
+        {
+          "id": "Perth",
+          "value": "(GMT+08:00) Perth",
+          "position": 115
+        },
+        {
+          "id": "Singapore",
+          "value": "(GMT+08:00) Singapore",
+          "position": 116
+        },
+        {
+          "id": "Taipei",
+          "value": "(GMT+08:00) Taipei",
+          "position": 117
+        },
+        {
+          "id": "Ulaan Bataar",
+          "value": "(GMT+08:00) Ulaan Bataar",
+          "position": 118
+        },
+        {
+          "id": "Osaka",
+          "value": "(GMT+09:00) Osaka",
+          "position": 119
+        },
+        {
+          "id": "Sapporo",
+          "value": "(GMT+09:00) Sapporo",
+          "position": 120
+        },
+        {
+          "id": "Seoul",
+          "value": "(GMT+09:00) Seoul",
+          "position": 121
+        },
+        {
+          "id": "Tokyo",
+          "value": "(GMT+09:00) Tokyo",
+          "position": 122
+        },
+        {
+          "id": "Yakutsk",
+          "value": "(GMT+09:00) Yakutsk",
+          "position": 123
+        },
+        {
+          "id": "Adelaide",
+          "value": "(GMT+10:30) Adelaide",
+          "position": 124
+        },
+        {
+          "id": "Darwin",
+          "value": "(GMT+09:30) Darwin",
+          "position": 125
+        },
+        {
+          "id": "Brisbane",
+          "value": "(GMT+10:00) Brisbane",
+          "position": 126
+        },
+        {
+          "id": "Canberra",
+          "value": "(GMT+11:00) Canberra",
+          "position": 127
+        },
+        {
+          "id": "Guam",
+          "value": "(GMT+10:00) Guam",
+          "position": 128
+        },
+        {
+          "id": "Hobart",
+          "value": "(GMT+11:00) Hobart",
+          "position": 129
+        },
+        {
+          "id": "Melbourne",
+          "value": "(GMT+11:00) Melbourne",
+          "position": 130
+        },
+        {
+          "id": "Port Moresby",
+          "value": "(GMT+10:00) Port Moresby",
+          "position": 131
+        },
+        {
+          "id": "Sydney",
+          "value": "(GMT+11:00) Sydney",
+          "position": 132
+        },
+        {
+          "id": "Vladivostok",
+          "value": "(GMT+10:00) Vladivostok",
+          "position": 133
+        },
+        {
+          "id": "Magadan",
+          "value": "(GMT+11:00) Magadan",
+          "position": 134
+        },
+        {
+          "id": "New Caledonia",
+          "value": "(GMT+11:00) New Caledonia",
+          "position": 135
+        },
+        {
+          "id": "Solomon Is.",
+          "value": "(GMT+11:00) Solomon Is.",
+          "position": 136
+        },
+        {
+          "id": "Auckland",
+          "value": "(GMT+13:00) Auckland",
+          "position": 137
+        },
+        {
+          "id": "Fiji",
+          "value": "(GMT+13:00) Fiji",
+          "position": 138
+        },
+        {
+          "id": "Kamchatka",
+          "value": "(GMT+12:00) Kamchatka",
+          "position": 139
+        },
+        {
+          "id": "Marshall Is.",
+          "value": "(GMT+12:00) Marshall Is.",
+          "position": 140
+        },
+        {
+          "id": "Wellington",
+          "value": "(GMT+13:00) Wellington",
+          "position": 141
+        },
+        {
+          "id": "Nuku'alofa",
+          "value": "(GMT+13:00) Nuku'alofa",
+          "position": 142
+        },
+        {
+          "id": "Samoa",
+          "value": "(GMT+14:00) Samoa",
+          "position": 143
+        },
+        {
+          "id": "Tokelau Is.",
+          "value": "(GMT+13:00) Tokelau Is.",
+          "position": 144
+        }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 19,
+      "label": "Other phone numbers",
+      "name": "phone_numbers",
+      "type": "group_field",
+      "default": true,
+      "actionable": true,
+      "position": 6,
+      "choices": [
+        {
+          "id": "18005922777",
+          "value": "Personal",
+          "position": 1
+        },
+        {
+          "id": "18005922778",
+          "value": "Home",
+          "position": 2
+        },
+        {
+          "id": "18005922779",
+          "value": "Other",
+          "position": 3
+        }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 20,
+      "label": "Address",
+      "name": "address",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 21,
+      "label": "City",
+      "name": "city",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 2,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 22,
+      "label": "State",
+      "name": "state",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 3,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 23,
+      "label": "Zipcode",
+      "name": "zipcode",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 4,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 24,
+      "label": "Country",
+      "name": "country",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 5,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 25,
+      "label": "Facebook",
+      "name": "facebook",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 26,
+      "label": "Twitter",
+      "name": "twitter",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 2,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 27,
+      "label": "LinkedIn",
+      "name": "linkedin",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 3,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 28,
+      "label": "Territory",
+      "name": "territory_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 9,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 29,
+      "label": "Source",
+      "name": "lead_source_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [
+        {
+          "id": 17000553977,
+          "value": "Web",
+          "position": 1,
+          "choice_type": 1
+        },
+        {
+          "id": 17000553978,
+          "value": "Organic Search",
+          "position": 2,
+          "choice_type": 1
+        },
+        {
+          "id": 17000553979,
+          "value": "Email",
+          "position": 3,
+          "choice_type": 1
+        },
+        {
+          "id": 17000553980,
+          "value": "Phone",
+          "position": 4,
+          "choice_type": 1
+        },
+        {
+          "id": 17000553981,
+          "value": "Chat",
+          "position": 5,
+          "choice_type": 1
+        },
+        {
+          "id": 17000553982,
+          "value": "Web Form",
+          "position": 6,
+          "choice_type": 1
+        },
+        {
+          "id": 17000553983,
+          "value": "Referral",
+          "position": 7,
+          "choice_type": 2
+        },
+        {
+          "id": 17000553984,
+          "value": "Direct",
+          "position": 8,
+          "choice_type": 2
+        },
+        {
+          "id": 17000553985,
+          "value": "Paid Search",
+          "position": 9,
+          "choice_type": 2
+        },
+        {
+          "id": 17000553986,
+          "value": "Blogs",
+          "position": 10,
+          "choice_type": 2
+        },
+        {
+          "id": 17000553987,
+          "value": "Social Media",
+          "position": 11,
+          "choice_type": 2
+        },
+        {
+          "id": 17000553988,
+          "value": "Display Ads",
+          "position": 12,
+          "choice_type": 2
+        },
+        {
+          "id": 17000553989,
+          "value": "Events",
+          "position": 13,
+          "choice_type": 2
+        },
+        {
+          "id": 17000553990,
+          "value": "Webinar",
+          "position": 14,
+          "choice_type": 2
+        }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 30,
+      "label": "Campaign",
+      "name": "campaign_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 2,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 31,
+      "label": "Medium",
+      "name": "medium",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 3,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 32,
+      "label": "Keyword",
+      "name": "keyword",
+      "type": "text",
+      "default": true,
+      "actionable": true,
+      "position": 4,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 33,
+      "label": "Lists",
+      "name": "lists",
+      "type": "auto_complete",
+      "default": true,
+      "actionable": true,
+      "position": 5,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false,
+      "auto_suggest_url": "/search/auto_suggest/lists.json?&q=",
+      "multiple": true
+    },
+    {
+      "id": 34,
+      "label": "Last contacted time",
+      "name": "last_contacted",
+      "type": "date",
+      "default": true,
+      "actionable": true,
+      "position": 1,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 35,
+      "label": "Last contacted mode",
+      "name": "last_contacted_mode",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 2,
+      "choices": [
+        {
+          "id": "Email Incoming",
+          "value": "Email Incoming",
+          "position": 1
+        },
+        {
+          "id": "Email Outgoing",
+          "value": "Email Outgoing",
+          "position": 2
+        },
+        {
+          "id": "Call Incoming",
+          "value": "Call Incoming",
+          "position": 3
+        },
+        {
+          "id": "Call Outgoing",
+          "value": "Call Outgoing",
+          "position": 4
+        },
+        {
+          "id": "Email Opened",
+          "value": "Email Opened",
+          "position": 5
+        },
+        {
+          "id": "Chat Conversation",
+          "value": "Chat Conversation",
+          "position": 6
+        },
+        {
+          "id": "Sales Activity",
+          "value": "Sales Activity",
+          "position": 7
+        },
+        {
+          "id": "SMS",
+          "value": "SMS",
+          "position": 8
+        }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 36,
+      "label": "Last activity type",
+      "name": "last_contacted_sales_activity_mode",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 3,
+      "choices": [
+        {
+          "id": "Chat",
+          "value": "Chat",
+          "position": 1
+        },
+        {
+          "id": "Phone",
+          "value": "Phone",
+          "position": 2
+        },
+        {
+          "id": "Meeting",
+          "value": "Meeting",
+          "position": 3
+        },
+        {
+          "id": "Task",
+          "value": "Task",
+          "position": 4
+        },
+        {
+          "id": "Email",
+          "value": "Email",
+          "position": 5
+        },
+        {
+          "id": "SMS Outgoing",
+          "value": "SMS Outgoing",
+          "position": 6
+        },
+        {
+          "id": "Reminder",
+          "value": "Reminder",
+          "position": 7
+        },
+        {
+          "id": "SMS Incoming",
+          "value": "SMS Incoming",
+          "position": 8
+        }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 37,
+      "label": "Last activity date",
+      "name": "last_contacted_via_sales_activity",
+      "type": "date",
+      "default": true,
+      "actionable": true,
+      "position": 4,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 38,
+      "label": "Active sales sequences",
+      "name": "active_sales_sequences",
+      "type": "multi_select_dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 5,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 39,
+      "label": "Completed sales sequences",
+      "name": "completed_sales_sequences",
+      "type": "multi_select_dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 6,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 40,
+      "label": "Last seen",
+      "name": "last_seen",
+      "type": "date",
+      "default": true,
+      "actionable": true,
+      "position": 7,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 41,
+      "label": "Score",
+      "name": "lead_score",
+      "type": "number",
+      "default": true,
+      "actionable": true,
+      "position": 8,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 42,
+      "label": "Customer fit",
+      "name": "customer_fit",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 9,
+      "choices": [
+        {
+          "id": "5",
+          "value": "5",
+          "position": 1
+        },
+        {
+          "id": "4",
+          "value": "4",
+          "position": 2
+        },
+        {
+          "id": "3",
+          "value": "3",
+          "position": 3
+        },
+        {
+          "id": "2",
+          "value": "2",
+          "position": 4
+        },
+        {
+          "id": "1",
+          "value": "1",
+          "position": 5
+        },
+        {
+          "id": "0",
+          "value": "0",
+          "position": 6
+        }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 43,
+      "label": "Recent note",
+      "name": "recent_note",
+      "type": "textarea",
+      "default": true,
+      "actionable": true,
+      "position": 10,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 44,
+      "label": "Created by",
+      "name": "creater_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 11,
+      "choices": [
+        {
+          "id": 17000047125,
+          "value": "zzz ggg",
+          "position": 1,
+          "is_active": true,
+          "deal_pipeline_id": 17000040685
+        }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 45,
+      "label": "Created at",
+      "name": "created_at",
+      "type": "date",
+      "default": true,
+      "actionable": true,
+      "position": 12,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 46,
+      "label": "Updated by",
+      "name": "updater_id",
+      "type": "dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 13,
+      "choices": [
+        {
+          "id": 17000047125,
+          "value": "zzz ggg",
+          "position": 1,
+          "is_active": true,
+          "deal_pipeline_id": 17000040685
+        }
+      ],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 47,
+      "label": "Updated at",
+      "name": "updated_at",
+      "type": "date",
+      "default": true,
+      "actionable": true,
+      "position": 14,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 48,
+      "label": "Web forms",
+      "name": "web_form_ids",
+      "type": "multi_select_dropdown",
+      "default": true,
+      "actionable": true,
+      "position": 15,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    },
+    {
+      "id": 49,
+      "label": "Last assigned at",
+      "name": "last_assigned_at",
+      "type": "date",
+      "default": true,
+      "actionable": true,
+      "position": 16,
+      "choices": [],
+      "base_model": "Contact",
+      "required": false,
+      "quick_add_position": null,
+      "visible": false
+    }
+  ]
+}

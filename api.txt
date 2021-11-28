@@ -1,0 +1,39 @@
+curl -H "Authorization: Token token=$FRESHSALES_TOKEN" -H "Content-Type: application/json" -X GET "https://$FRESHSALES_DOMAIN.myfreshworks.com/crm/sales/api/settings/contacts/fields"
+
+curl -H "Authorization: Token token=$FRESHSALES_TOKEN" -H "Content-Type: application/json" -X GET "https://$FRESHSALES_DOMAIN.myfreshworks.com/crm/sales/api/contacts/filters"
+
+curl -H "Authorization: Token token=$FRESHSALES_TOKEN" -H "Content-Type: application/json" -X GET "https://$FRESHSALES_DOMAIN.myfreshworks.com/crm/sales/api/contacts/view/17002064143"
+
+/api/contacts/view/[view_id]
+
+# List apis
+
+curl -H fm-token:sfg999666t673t7t82 -XGET "https://domain.freshmarketer.com/mas/api/v1/lists"
+
+curl -H "Authorization: Token token=$FRESHSALES_TOKEN" -H "Content-Type: application/json" -X GET "https://$FRESHSALES_DOMAIN.myfreshworks.com/crm/sales/lists"
+
+{
+  "lists": [
+    {
+      "id": 17000010181,
+      "name": "Sample list"
+    },
+    {
+      "id": 17000011922,
+      "name": "New Signup"
+    }
+  ],
+  "meta": {
+    "total_pages": 1,
+    "total": 2
+  }
+}
+
+# Add contact to a list
+
+curl 'https://$FRESHSALES_DOMAIN.myfreshworks.com/crm/sales/lists/17000011922/add_contacts' \
+  -X 'PUT' \
+  -H 'Content-Type: application/json; charset=UTF-8' \
+  -H 'Accept: application/json, text/javascript, */*; q=0.01' \
+  --data-raw '{"ids":["17011374038"]}' \
+  --compressed
