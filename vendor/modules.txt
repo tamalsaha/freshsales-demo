@@ -1,0 +1,15 @@
+# github.com/go-resty/resty/v2 v2.6.0
+## explicit; go 1.11
+github.com/go-resty/resty/v2
+# github.com/gobuffalo/flect v0.2.2
+## explicit; go 1.13
+github.com/gobuffalo/flect
+# golang.org/x/net v0.0.0-20210405180319-a5a99cb37ef4
+## explicit; go 1.11
+golang.org/x/net/publicsuffix
+# gomodules.xyz/freshsales-client-go v0.0.2
+## explicit; go 1.16
+gomodules.xyz/freshsales-client-go
+# gomodules.xyz/sets v0.0.0-20210218105342-2efe2fb519a2
+## explicit; go 1.14
+gomodules.xyz/sets
